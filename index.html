@@ -22,15 +22,8 @@
             target: document.querySelector("#camera"), // Or '#yourElement' (optional)
           },
           decoder: {
-    readers: [{
-        format: "ean_reader",
-        config: {
-            supplements: [
-                'ean_13_reader', 'ean_2_reader'
-            ]
-        }
-    }]
-},
+            readers: ["ean_reader"],
+          },
         },
         function (err) {
           if (err) {
